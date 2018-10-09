@@ -1,0 +1,266 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body{
+	background-color: #222629;
+}
+
+.menu.menu-top{
+	top: 0;
+	right: 0;
+	left: 0;
+	line-height: 4rem;
+	z-index: 10;
+	background-color: #1B1F21;
+	color: #fff;
+}
+
+.menu.menu-right{
+	top: 4rem;
+	right: 0;
+	bottom: 0;
+	width: 240px;
+	background-color: #cecece;
+}
+
+.menu.menu-left{
+	top: 4rem;
+	bottom: 0;
+	left: 0;
+	width: 240px;
+	background-color: #cecece;
+}
+
+.menu.menu-left:hover,.menu.menu-right:hover{
+	overflow-y: scroll;
+}
+
+.menu.menu-left > .list-group > .list-group-item,
+.menu.menu-right > .list-group > .list-group-item {
+	background: transparent;
+	border: 0;
+}
+
+.menu.menu-top > .d-flex > a.menu-toggle{
+	border-radius: 50%;
+	width: 3rem;
+	height: 3rem;
+	margin: .5rem 0;
+	padding: 0;
+}
+
+.menu.menu-top > .d-flex > a.menu-toggle > i.material-icons{
+	line-height: 3rem;
+
+}
+
+a:{
+	color : yellow;
+}
+
+a:hover{
+    text-decoration: none;
+    color : white;
+}
+
+main.default{
+	margin:  4rem 240px 0;
+	padding: 1rem 0; 
+
+			transition: all .4s cubic-bezier(.4,0,.2,1);
+		-ms-transition: all .4s cubic-bezier(.4,0,.2,1);
+	-webkit-transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+
+
+div.card > div.card-body > h5.card-title{
+	color : #28A745;
+}
+
+div.card > div.card-body > h5.card-text{
+	color : #000;
+}
+
+div.card > div.card-body{
+  padding: .2rem;
+  line-height: 1rem;
+}
+
+
+div.card,
+div.card-deck > div.card > a > img.card-img-top{
+	border-radius: 0;
+	border-width: 0;
+}
+
+.card-group > .card:only-child .card-img-bottom,
+ .card-group > .card:only-child .card-footer {
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+
+.logo{
+	margin-top: -.2rem;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/MaterialIcons-Regular.eot); /* For IE6-8 */
+  src: local('Material Icons'),
+    local('MaterialIcons-Regular'),
+    url(../fonts/MaterialIcons-Regular.woff2) format('woff2'),
+    url(../fonts/example.com/MaterialIcons-Regular.woff) format('woff'),
+    url(../fonts/example.com/MaterialIcons-Regular.ttf) format('truetype');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 32px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+
+body > main.default > div.container {
+	color: #D3D3D3;
+}
+
+body > nav.menu > .list-group > .list-group-item{
+	color: #000;
+}
+
+
+div.container > div.card-deck > div.card > div.card-body{
+	color : #000;
+	background-color: #cecece;
+}
+
+
+
+.logo{
+	margin-top: -.2rem;
+}
+
+.menu{
+	position: fixed;
+
+			transition: all .4s cubic-bezier(.4,0,.2,1);
+		-ms-transition: all .4s cubic-bezier(.4,0,.2,1);
+	-webkit-transition: all .4s cubic-bezier(.4,0,.2,1);
+}
+
+@media (max-width: 991px){
+	.menu.menu-right{
+				transform: translate(100%);
+			-ms-transform: translate(100%);
+		-webkit-transform: translate(100%);
+		z-index: 100;
+	}
+	.menu.menu-left{
+				transform: translate(-100%);
+			-ms-transform: translate(-100%);
+		-webkit-transform: translate(-100%);
+		z-index: 100;
+	}
+
+	main.default{
+		margin: 4rem 0;
+	}
+
+	body.menu-right-active > .menu.menu-right{
+				transform: translate(0);
+			-ms-transform: translate(0);
+		-webkit-transform: translate(0);
+	}
+
+	body.menu-left-active > .menu.menu-left{
+				transform: translate(0);
+			-ms-transform: translate(0);
+		-webkit-transform: translate(0);
+	}
+
+}
+
+main.default > div.container > div.card-column{
+		-webkit-column-count: 4; /* Chrome, Safari, Opera */
+    	-moz-column-count: 4; /* Firefox */
+    	column-count: 4;
+}
+
+@media(min-width: 480px){
+	main.default > div.container > div.card-column{
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    	-moz-column-count: 1; /* Firefox */
+    	column-count: 1;
+	}
+}
+
+@media(max-width: 480px){
+	main.default > div.container > div.card-column{
+		-webkit-column-count: 1; /* Chrome, Safari, Opera */
+    	-moz-column-count: 1; /* Firefox */
+    	column-count: 1;
+	}
+}
+
+
+@media(min-width: 741px){
+	main.default > div.container > div.card-column{
+		-webkit-column-count: 2; /* Chrome, Safari, Opera */
+    	-moz-column-count: 2; /* Firefox */
+    	column-count: 2;
+	}
+}
+
+
+@media(min-width: 941px){
+	main.default > div.container > div.card-column{
+		-webkit-column-count: 4; /* Chrome, Safari, Opera */
+    	-moz-column-count: 4; /* Firefox */
+    	column-count: 4;
+	}
+
+	nav.menu > div.d-flex > a.btn {
+		display: none;
+	}
+}
+
+main.default > div.container > div.card-column > div.card{
+	margin-bottom: 1.2rem;
+	color : #000;
+}
+
+main.default > div.container > div.card-column > div.card > a > img.card-img-top{
+	border-radius: 0;
+}
+
