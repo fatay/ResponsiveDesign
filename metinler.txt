@@ -1,4 +1,0 @@
-<h1 class="newh1"> Bu baþlýk yazýsýdýr </h1>
-<h3 class="newh3"> Bu yanBaþlýk yazýsýdýr </h3>
-<p   class="newp"> Bu koyu yazýdýr .      </p>
-Bu ise normal yazýdýr hacý aðabeyyy.
